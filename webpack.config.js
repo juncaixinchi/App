@@ -2,7 +2,7 @@ const path = require('path')
 const HtmlwebpackPlugin = require('html-webpack-plugin')
 
 const ROOT_PATH = path.resolve(__dirname)
-const BUILD_PATH = path.resolve(ROOT_PATH, 'public')
+const BUILD_PATH = path.resolve(ROOT_PATH, 'build')
 const APP_PATH = path.resolve(ROOT_PATH, 'src')
 module.exports = {
   entry: {
@@ -61,7 +61,7 @@ module.exports = {
 
   plugins: [
     new HtmlwebpackPlugin({
-      title: 'React Test App'
+      title: 'React App'
     })
   ]
 }
