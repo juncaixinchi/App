@@ -5,6 +5,7 @@
   "main": "main.js",
   "scripts": {
     "build": "webpack",
+    "webpack": "webpack --watch --watch-poll",
     "hotdev": "webpack-dev-server --hot",
     "start": "electron .",
     "devel": "nodemon --exec electron devel.js"
