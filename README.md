@@ -8,13 +8,7 @@
 
 利用npm下载所有所需软件包
 
-	npm install
-
-按照当前项目 node_modules 目录内的安装包情况生成稳定的版本号描述，参考[npm-shrinkwrap](http://tech.meituan.com/npm-shrinkwrap.html)
-
-	npm shrinkwrap
-
-安装的软件包列表，`package.json`
+    npm install
 
 ## Babel
 
@@ -32,26 +26,28 @@ Webpack的配置文件,`webpack.config.js`
 
 ESLint 是一个插件化的javascript 代码检测工具，它可以用于检查常见的JavaScript 代码错误，也可以进行代码风格检查。这里主要以[airbnb](https://github.com/airbnb/javascript)的指南为准，基本规则见[Eslint Rules](http://eslint.cn/docs/rules/)，React相关规则见[React Rules](https://github.com/JasonBoy/javascript/tree/master/react)
 
-检查file.jsx的代码格式
+检查并自动修复代码格式
 
-	eslint file.jsx
-
-检查并修改可自动修正的部分（主要是空格与换行等空白的修复）
-
-	eslint --fix file.jsx
+	  npm run eslint
 
 Eslint的配置文件，`.eslintrc`
 
-## 命令
+## 启动命令
 
-Set Environment to Production
+Run webpack in production mode
 
-    export NODE_ENV=production
+    npm run webpack2
 
-Build
+Start 
 
-    npm run build
+    npm start
 
-Run develop server
+## devel mode
 
-    npm run dev
+Run webpack in dev mode and keep watching files
+
+    npm run webpack
+
+Start App in auto-restart mode
+
+    npm run devel
